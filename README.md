@@ -22,11 +22,21 @@ Welcome to the Steganography Attack Prevention Tool, a cutting-edge security sol
 
 - Python 3.8 or higher
 - Camera device connected to your system
+- pip (Python package installer)
 
 ### Install Dependencies
 
+First, ensure pip is installed. If pip is not installed, you can install it using:
+
 ```bash
-pip install -r requirements.txt
+sudo apt update && sudo apt install python3-pip
+```
+
+Then install the required Python packages:
+
+```bash
+python3 -m pip install opencv-python
+python3 -m pip install -r requirements.txt
 ```
 
 ![Installation GIF](https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif)
@@ -40,7 +50,7 @@ pip install -r requirements.txt
 Run the tool to start real-time camera capture and scanning:
 
 ```bash
-python main.py
+python3 main.py
 ```
 
 Press `q` to quit the camera feed.
@@ -52,7 +62,7 @@ Press `q` to quit the camera feed.
 Run the GUI application:
 
 ```bash
-python gui.py
+python3 gui.py
 ```
 
 Use the buttons to start and stop camera scanning. Alerts will be shown in the log area and as desktop notifications.
@@ -60,9 +70,6 @@ Use the buttons to start and stop camera scanning. Alerts will be shown in the l
 ![GUI Usage GIF](https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif)
 
 ---
-python gui.py
-python main.py
-pip install -r requirements.txt
 
 ## Permissions Required
 
@@ -115,6 +122,3 @@ This makes it an excellent choice for interview submissions and portfolio presen
 ## License
 
 MIT License
-python gui.py
-python main.py
-pip install -r requirements.txt
